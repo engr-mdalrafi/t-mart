@@ -40,14 +40,14 @@ let [up, setUp] = useState(1)
                 </div>
                 <div className='lg:min-w-[540px]'>
                     <h2 className='text-3xl font-medium'>{productData.title}</h2>
-                    <p className='flex gap-2 text-amber-400'> 
+                    <h1 className='flex gap-2 text-amber-400'> 
                         <FaRegStar />
                         <FaRegStar />
                         <FaRegStar />
                         <FaRegStar />
                         <FaRegStar />
                         <p className='text-primary'>{(productData.rating)}</p>
-                    </p>
+                    </h1>
                     <p className='pt-6 pb-10 text-secondary text-wrap'>
                         {productData.description}
                     </p>
