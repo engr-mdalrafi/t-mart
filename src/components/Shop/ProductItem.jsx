@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router'
-import ProductCard from '../UI/productCard'
-import Button from '../UI/Button'
 import axios from 'axios'
+import ProductCard from '../UI/productCard'
 
 const ProductItem = () => {
     const [products, setProducts] = useState([])
@@ -63,8 +61,8 @@ const ProductItem = () => {
                 }
             </div>
             <div className='mt-14 w-full flex justify-center items-center gap-3'>
-                <button onClick={()=>setPagination((prev)=>({...prev, skip: pagination.skip - 2}))} className='px-3 py-1.5 border rounded-[6px] cursor-pointer'>Pre</button>
-                <button onClick={()=>setPagination((prev)=>({...prev, skip: pagination.skip + 2}))} className='px-3 py-1.5 border rounded-[6px] cursor-pointer'>Next</button>
+                <button onClick={()=>setPagination((prev)=>({...prev, skip: pagination.skip - 2}))} className='px-3 py-1.5 border rounded-md cursor-pointer'>Pre</button>
+                <button onClick={()=>setPagination((prev)=>({...prev, skip: pagination.skip + 2}))} className='px-3 py-1.5 border rounded- cursor-pointer'>Next</button>
             </div>
         </div>
 
