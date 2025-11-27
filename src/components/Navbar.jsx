@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { CiSearch, CiUser } from 'react-icons/ci'
 import { FaBars } from 'react-icons/fa'
-import { IoIosMenu } from 'react-icons/io'
 import { TfiShoppingCart } from 'react-icons/tfi'
 import { Link } from 'react-router'
 
@@ -13,7 +12,7 @@ const Navbar = () => {
     <>
       <nav className='relative'>
         <div className="container flex justify-between items-center">
-          <div className='py-[54px]'><img src="/logo.png" alt="logo" /></div>
+          <div className='py-[54px]'><Link to="/"><img src="/logo.png" alt="logo" /></Link></div>
           {/* Desktop Nav */}
           <div className='hidden md:block'>
             <ul className='text-base font-medium text-secondary flex gap-10'>

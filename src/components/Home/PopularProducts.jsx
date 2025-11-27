@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router'
-import ProductCard from '../UI/productCard'
+import ProductCard from '../UI/ProductCard'
 import axios, { all } from 'axios'
 import Skeliton from '../UI/Skeliton'
 
@@ -34,7 +34,7 @@ const PopularProducts = () => {
             </div>
 
             <div className='pb-16'>
-                <ul className='flex gap-10'>
+                <ul className='grid grid-cols-3 md:flex gap-10 text-nowrap'>
                   {
                     categories.map((item)=>(
                       <li key={item}><button onClick={()=>setSelectedCategory(item =="all" ? "" : item)} className={`${item == selectedCategory && "text-bagde"} capitalize cursor-pointer`}>{item}</button></li>

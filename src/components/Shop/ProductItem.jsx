@@ -37,7 +37,7 @@ const ProductItem = () => {
         <div className='pt-32 pb-4'>
             
             <div className='pb-16 flex justify-between'>
-                <ul className='flex gap-10'>
+                <ul className='grid grid-cols-2 text-nowrap md:flex gap-10'>
                   {
                     categories.map((item)=>(
                       <li key={item}><button onClick={()=>setSelectedCategory(item =="all" ? "" : item)} className={`${item == selectedCategory && "text-bagde"} capitalize cursor-pointer`}>{item}</button></li>

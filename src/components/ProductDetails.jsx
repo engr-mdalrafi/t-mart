@@ -78,14 +78,11 @@ let [up, setUp] = useState(1)
                         <button onClick={()=>setUp(++up)}>+</button>
                     </div>
                     <div className='flex items-center gap-4 text-secondary'>
-                        <div className='py-3 px-11 border text-secondary block w-fit'>
+                        <div className=''>
                             <Button title="BUY NOW"/>
                         </div>
-                        <div className='py-1 px-2 border text-2xl text-secondary block w-fit'>
-                            <Button title={<CiHeart />}/>
-                        </div>
-                        <div className='py-1 px-2 border text-2xl text-secondary block w-fit'>
-                            <Button title={<MdOutlineEmail />}/>
+                        <div>
+                            <Button title={"Add To Card"}/>
                         </div>
                     </div>
                     <div className='pt-7 flex gap-3 items-center text-secondary'>
