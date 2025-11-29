@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router'
-import ProductCard from '../UI/ProductCard'
+import ProductCard from '../UI/productCard'
 import axios, { all } from 'axios'
 import Skeliton from '../UI/Skeliton'
 
